@@ -1,0 +1,47 @@
+{
+    "name": "chrono",
+    "version": "0.0.0",
+
+    "ghc-options": "-Wall -Wincomplete-record-updates -Wincomplete-uni-patterns",
+
+    "default-extensions": [
+        "ApplicativeDo",
+        "DerivingStrategies",
+        "FlexibleContexts",
+        "FlexibleInstances",
+        "FunctionalDependencies",
+        "GeneralizedNewtypeDeriving",
+        "LambdaCase",
+        "MultiParamTypeClasses",
+        "OverloadedLists",
+        "OverloadedStrings",
+        "ScopedTypeVariables"
+    ],
+
+    "dependencies": [
+        "base",
+        "containers",
+        "foldl",
+        "lens",
+        "mtl",
+        "profunctors",
+        "text",
+        "transformers",
+        "vector"
+    ],
+
+    "library": {
+        "source-dirs": "library"
+    },
+
+    "tests": {
+        "tests": {
+            "source-dirs": "tests",
+            "main": "Main.hs",
+            "dependencies": [
+                "chrono",
+                "hspec"
+            ]
+        }
+    }
+}
